@@ -13,6 +13,9 @@
 		74D9BC6127F2F54D00C40951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D9BC5F27F2F54D00C40951 /* LaunchScreen.storyboard */; };
 		74D9BC6927F2F7A500C40951 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9BC6827F2F7A500C40951 /* RegistrationViewController.swift */; };
 		74D9BC6C27F3043600C40951 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9BC6B27F3043600C40951 /* NetworkingManager.swift */; };
+		74D9BC7327F43F2A00C40951 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9BC7227F43F2A00C40951 /* MainTabbarController.swift */; };
+		74D9BC7527F43F6500C40951 /* MainHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9BC7427F43F6500C40951 /* MainHomeViewController.swift */; };
+		74D9BC7727F45AC800C40951 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9BC7627F45AC800C40951 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		74D9BC6227F2F54D00C40951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74D9BC6827F2F7A500C40951 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		74D9BC6B27F3043600C40951 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		74D9BC7227F43F2A00C40951 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		74D9BC7427F43F6500C40951 /* MainHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeViewController.swift; sourceTree = "<group>"; };
+		74D9BC7627F45AC800C40951 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +62,13 @@
 		74D9BC5327F2F54B00C40951 /* Flea_Market */ = {
 			isa = PBXGroup;
 			children = (
+				74D9BC7127F43F1600C40951 /* Controller */,
 				74D9BC6A27F3042B00C40951 /* Networking */,
 				74D9BC5427F2F54B00C40951 /* AppDelegate.swift */,
 				74D9BC5627F2F54B00C40951 /* SceneDelegate.swift */,
 				74D9BC5D27F2F54D00C40951 /* Assets.xcassets */,
 				74D9BC5F27F2F54D00C40951 /* LaunchScreen.storyboard */,
 				74D9BC6227F2F54D00C40951 /* Info.plist */,
-				74D9BC6827F2F7A500C40951 /* RegistrationViewController.swift */,
 			);
 			path = Flea_Market;
 			sourceTree = "<group>";
@@ -73,6 +79,17 @@
 				74D9BC6B27F3043600C40951 /* NetworkingManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		74D9BC7127F43F1600C40951 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74D9BC6827F2F7A500C40951 /* RegistrationViewController.swift */,
+				74D9BC7227F43F2A00C40951 /* MainTabbarController.swift */,
+				74D9BC7427F43F6500C40951 /* MainHomeViewController.swift */,
+				74D9BC7627F45AC800C40951 /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D9BC7727F45AC800C40951 /* LoginViewController.swift in Sources */,
 				74D9BC6927F2F7A500C40951 /* RegistrationViewController.swift in Sources */,
 				74D9BC6C27F3043600C40951 /* NetworkingManager.swift in Sources */,
+				74D9BC7327F43F2A00C40951 /* MainTabbarController.swift in Sources */,
 				74D9BC5527F2F54B00C40951 /* AppDelegate.swift in Sources */,
+				74D9BC7527F43F6500C40951 /* MainHomeViewController.swift in Sources */,
 				74D9BC5727F2F54B00C40951 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

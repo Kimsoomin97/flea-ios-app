@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     private let registrationLabel: UILabel = {
         let label = UILabel()
@@ -52,7 +52,7 @@ class RegistrationViewController: UIViewController {
         return label
     }()
     
-    private let emailTextField: UITextField = {
+    let emailTextField: UITextField = {
         let txt = UITextField()
         txt.placeholder = "e-mail 입력"
         return txt
@@ -96,15 +96,27 @@ class RegistrationViewController: UIViewController {
     
     private let signupButton: UIButton = {
         let button = UIButton()
+//        button.heightAnchor.constraint(equalToConstant:)
+//        button.widthAnchor.constraint(equalToConstant:)
         button.setTitle("SIGN UP", for: .normal)
-//        button.titleLabel?.text = ""
+        button.setTitleColor(.label, for: .normal)
+        button.backgroundColor = .systemGray
+        button.addTarget(self, action: #selector(didTapSignupButton), for: .touchUpInside)
+
         return button
     }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        emailTextField.delegate = self
+//        NetworkingManager.shard.postNetworking()
+    }
+    
+    @objc func didTapSignupButton() {
         NetworkingManager.shard.postNetworking()
+        self.navigationController?.popViewController(animated: true)
     }
     
     private func configureUI() {
@@ -185,8 +197,17 @@ class RegistrationViewController: UIViewController {
         signupButton.translatesAutoresizingMaskIntoConstraints = false
         signupButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
         signupButton.topAnchor.constraint(equalTo: addressTextField.bottomAnchor, constant: 30).isActive = true
-
-    
+        signupButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        signupButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
         
     }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("text = \(textField.text)")
+        return true
+    }
 }
+
+//알림창은 UIAlertController, UIAlertAction
+//textField delegate
