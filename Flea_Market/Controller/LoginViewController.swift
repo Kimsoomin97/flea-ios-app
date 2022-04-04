@@ -53,13 +53,13 @@ class LoginViewController: UIViewController {
     }()
     
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        configureUI()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configureUI()
 //        emailTextField.delegate = self
-////        NetworkingManager.shard.postNetworking()
-//    }
-//
+//        NetworkingManager.shard.postNetworking()
+    }
+
     @objc func didTapLoginButton() {
         NetworkingManager.shard.postNetworking()
         self.navigationController?.popViewController(animated: true)

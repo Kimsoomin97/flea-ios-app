@@ -20,7 +20,7 @@ class MainHomeViewController: UIViewController {
     
     private let loginButton: UIButton = {
         let button = UIButton()
-//        button.setTitle("회원가입 폼 이동", for: .normal)
+//        button.setTitle("로그인 폼 이동", for: .normal)
 //        button.setTitleColor(.label, for: .normal)
         button.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
         button.setBackgroundImage(UIImage(named: "login"), for: .normal)
