@@ -22,9 +22,11 @@ class MainHomeViewController: UIViewController {
         let button = UIButton()
 //        button.setTitle("로그인 폼 이동", for: .normal)
 //        button.setTitleColor(.label, for: .normal)
+        
         button.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
         button.setBackgroundImage(UIImage(named: "login"), for: .normal)
         return button
+        
     }()
     
 //    private let imageView: UIImageView = {
@@ -47,8 +49,7 @@ class MainHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        //알림창은 UIAlertController, UIAlertAction
-        //textField delegate
+
     }
     
     @objc func didTapRegistButton() {
