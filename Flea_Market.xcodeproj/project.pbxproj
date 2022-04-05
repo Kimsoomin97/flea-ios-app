@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74935BEF27FBE6F70092E562 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74935BEE27FBE6F70092E562 /* MypageViewController.swift */; };
 		74D9BC5527F2F54B00C40951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9BC5427F2F54B00C40951 /* AppDelegate.swift */; };
 		74D9BC5727F2F54B00C40951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9BC5627F2F54B00C40951 /* SceneDelegate.swift */; };
 		74D9BC5E27F2F54D00C40951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D9BC5D27F2F54D00C40951 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		74935BEE27FBE6F70092E562 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		74D9BC5127F2F54B00C40951 /* Flea_Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flea_Market.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D9BC5427F2F54B00C40951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74D9BC5627F2F54B00C40951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				74D9BC7227F43F2A00C40951 /* MainTabbarController.swift */,
 				74D9BC7427F43F6500C40951 /* MainHomeViewController.swift */,
 				74D9BC7627F45AC800C40951 /* LoginViewController.swift */,
-				74935BEE27FBE6F70092E562 /* MypageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,7 +169,6 @@
 				74D9BC5527F2F54B00C40951 /* AppDelegate.swift in Sources */,
 				74D9BC7527F43F6500C40951 /* MainHomeViewController.swift in Sources */,
 				74D9BC5727F2F54B00C40951 /* SceneDelegate.swift in Sources */,
-				74935BEF27FBE6F70092E562 /* MypageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +309,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9P43UX98F5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Flea_Market/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -340,7 +335,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9P43UX98F5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Flea_Market/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
