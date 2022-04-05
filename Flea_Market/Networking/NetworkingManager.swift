@@ -54,13 +54,13 @@ final class NetworkingManager {
                 print("data = \(data)")
             }
             
-            do{
-                let dt = try JSONDecoder().decode(MyData.self, from: data!)
-                print("dt = \(dt)")
-            }
-            catch {
-                print("decode error")
-            }
+//            do{
+//                let dt = try JSONDecoder().decode(MyData.self, from: data!)
+//                print("dt = \(dt)")
+//            }
+//            catch {
+//                print("decode error")
+//            }
             
             if let error = error {
                 print("error = \(error)")
