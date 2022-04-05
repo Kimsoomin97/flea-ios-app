@@ -7,6 +7,10 @@
 
 import UIKit
 
+//class MainTabbarController: UITabBarController {
+//
+//}
+
 class LoginViewController: UIViewController {
     
     private let logInLabel: UILabel = {
@@ -56,6 +60,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        let alert = UIAlertController(title: <#T##String?#>, message: <#T##String?#>, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: <#T##String?#>, style: <#T##UIAlertAction.Style#>, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>))
+        
+        present(alert, animated: true, completion: nil)
 //        emailTextField.delegate = self
 //        NetworkingManager.shard.postNetworking()
     }
